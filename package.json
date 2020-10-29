@@ -1,9 +1,9 @@
 {
-  "name": "ywbj-ui",
+  "name": "lzj-template-ui",
   "description": "A components of pc base on vue2.X",
-  "version": "1.0.1",
-  "author": "yuwenbinjie <yuwenbinjie@163.com>",
-  "main": "dist/yw.js",
+  "version": "1.0.2",
+  "author": "lzj <1104792149@qq.com>",
+  "main": "dist/lzjTemplateUi.js",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -11,6 +11,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.js"
   },
   "dependencies": {
+    "lib-flexible": "^0.3.2",
     "vue": "^2.5.11"
   },
   "browserslist": [
@@ -18,12 +19,13 @@
     "last 2 versions",
     "not ie <= 8"
   ],
- "keywords": [
-  "vue2.x",
-  "components"
+  "keywords": [
+    "vue2.x",
+    "components"
   ],
-  "homepage": "https://github.com/Yuwenbinjie/ywbj-ui.git",
+  "homepage": "https://github.com/1104792149/lzj-template-ui.git",
   "devDependencies": {
+    "@babel/polyfill": "^7.8.3",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",

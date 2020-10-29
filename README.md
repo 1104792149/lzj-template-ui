@@ -1,4 +1,4 @@
-# ywbj-ui
+# lzj-template-ui
 
 > 基于Vue2.x的前端组件库
 
@@ -7,13 +7,13 @@
 .
 ├── dist                         # 压缩后文件目录
 ├── site                         # 项目结构目录
-│   ├── App.vue                  # 单页应用父组件          
-│   └── main.js                  # 单页应用启动入口文件
+│   ├── App.vue                  # 单页应用父组件          
+│   └── main.js                  # 单页应用启动入口文件
 ├── src                           # 开发目录
-│   ├── assets                    # 静态文件：scss/image
-│   ├── components                # 存放共用组件库
-│   ├── index.js                  # 全局注册组件插件
-│   └── style.js                  # 导入scss
+│   ├── assets                    # 静态文件：scss/image
+│   ├── components                # 存放共用组件库
+│   ├── index.js                  # 全局注册组件插件
+│   └── style.js                  # 导入scss
 ├── index.html
 ├── package.json                  # 依赖管理
 ├── webpack.dev.js                #项目启动配置文件：npm run dev

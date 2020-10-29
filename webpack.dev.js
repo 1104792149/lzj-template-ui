@@ -2,11 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './site/main.js',
+  entry: './site/main.js',// 开发时项目入口
+  // entry: './src/lib/index.js', // 打包发布时入口
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js',
+    filename: 'lzjTemplateUi.js',// 我们可不想打包后叫build 多low啊 起一个与项目相对应的
   },
   module: {
     rules: [
@@ -63,7 +64,7 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map'  // 生成map文件方便调试
 }
 
 if (process.env.NODE_ENV === 'production') {

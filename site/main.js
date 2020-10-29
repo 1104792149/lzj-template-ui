@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import '@/assets/index.scss'
-import YwVue from '@'
+import 'lib-flexible/flexible.js'
+import LzjVue from '@'
 
-Vue.use(YwVue)
+Vue.use(LzjVue)
 new Vue({
   el: '#app',
   render: h => h(App)

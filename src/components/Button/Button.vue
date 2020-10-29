@@ -1,10 +1,7 @@
 <template>
-    <button 
-        @click="clickBtn"
-        :class="classBtn"
-        :disabled="isDisabled">
-        <slot></slot>
-    </button>
+    <div :class="classBtn">
+      <slot></slot>
+    </div>
 </template>
 
 <script>
@@ -37,16 +34,7 @@ export default {
     },
     computed: {
         classBtn() {
-            let {preCls, type, size, shape} = this
-            let className = [
-                `${preCls}`,
-                {
-                    [`${preCls}-${type}`]: !!type,
-                    [`${preCls}-${size}`]: !!size,
-                    [`${preCls}-${shape}`]: !!shape,
-                },
-            ]
-            return className
+          return 'bg-287 text-white  buttom_250_88'
         }
     },
     methods: {

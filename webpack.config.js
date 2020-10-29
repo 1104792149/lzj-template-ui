@@ -5,13 +5,13 @@ const ExtractTextPlugin = require ('extract-text-webpack-plugin')
 module.exports = {
   entry: {
     style: './src/style.js',
-    yw: './src/index.js',
+    lzjTemplateUi: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: '[name].js',
-    library: 'Yw',
+    filename: '[name].js',// 我们可不想打包后叫build 多low啊 起一个与项目相对应的
+    library: 'lzjTemplateUi', // library指定的就是你使用require时的模块名，这里便是require("PayKeyboard")
     libraryTarget: 'umd'
   },
   module: {
@@ -75,7 +75,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
-    new ExtractTextPlugin("yw.css",{allChunks: true}),
+    new ExtractTextPlugin("lzjTemplateUi.css",{allChunks: true}),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
