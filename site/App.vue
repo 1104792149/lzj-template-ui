@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <lzj-button>default</lzj-button>
-    <lzj-button size="small">small</lzj-button>
-    <lzj-button size="medium">medium</lzj-button>
     <lzj-button @click="show3 = true" size="large">large</lzj-button>
     <lzj-modal @on-ok="show3 = false" @on-cancel="show3 = false" :width="300" :isShow="show3"></lzj-modal>
   </div>

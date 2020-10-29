@@ -34,7 +34,7 @@ export default {
     },
     computed: {
         classBtn() {
-          return 'bg-287 text-white  buttom_250_88'
+          return 'lzj_buttom_250_88 lzj_bag_zt lzj_f14'
         }
     },
     methods: {
