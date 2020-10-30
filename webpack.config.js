@@ -10,8 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: '[name].js',// 我们可不想打包后叫build 多low啊 起一个与项目相对应的
-    library: 'lzjTemplateUi', // library指定的就是你使用require时的模块名，这里便是require("PayKeyboard")
+    filename: '[name].js',
+    library: 'lzjTemplateUi',
     libraryTarget: 'umd'
   },
   module: {
